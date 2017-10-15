@@ -18,5 +18,19 @@ The NSL-KDD data set has the following advantages over the original KDD data set
 * The number of selected records from each difficulty level group is inversely proportional to the percentage of records in the original KDD data set. As a result, the classification rates of distinct machine learning methods vary in a wider range, which makes it more efficient to have an accurate evaluation of different learning techniques.
 * The number of records in the train and test sets are reasonable, which makes it affordable to run the experiments on the complete set without the need to randomly select a small portion. Consequently, evaluation results of different research works will be consistent and comparable.
 
+# How to run the exercises
+The course environment is based in Docker. Just go to the folder where you download the project and run (it takes several minutes):
 
+## on MacOs:
+```
+docker run -it --rm -p 8888:8888 -v “$(PWD)”:/home/jovyan/work jupyter/all-spark-notebook 
+```
+
+## on Windows:
+``` 
+docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work jupyter/all-spark-notebook 
+```
+
+## on Linux:
+(pending to test)
 
