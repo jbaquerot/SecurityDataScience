@@ -21,16 +21,13 @@ The NSL-KDD data set has the following advantages over the original KDD data set
 # How to run the exercises
 The course environment is based in Docker. Just go to the folder where you download the project and run (it takes several minutes):
 
-## on MacOs:
+## on MacOs and Linux:
 ```
-docker run -it --rm -p 8888:8888 -v “$(PWD)”:/home/jovyan/work jupyter/all-spark-notebook 
+docker run -it --rm -p 8888:8888 -v “$(pwd)”:/home/jovyan/work jupyter/all-spark-notebook 
 ```
 
 ## on Windows:
 ``` 
 docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work jupyter/all-spark-notebook 
 ```
-
-## on Linux:
-(pending to test)
 
