@@ -23,11 +23,11 @@ The course environment is based in Docker. Just go to the folder where you downl
 
 ## on MacOs and Linux:
 ```
-docker run -it --rm -p 8888:8888 -v “$(pwd)”:/home/jovyan/work jupyter/all-spark-notebook 
+docker run -it --rm -p 8888:8888 -v “$(pwd)”:/home/jovyan/work jupyter/all-spark-notebook:4ebeb1f2d154
 ```
 
 ## on Windows:
 ``` 
-docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work jupyter/all-spark-notebook 
+docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work jupyter/all-spark-notebook:4ebeb1f2d154 
 ```
 
